@@ -1,0 +1,34 @@
+
+<head>
+  <meta charset="utf-8">
+  <title> Login Form </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="center">
+    <h1>Login</h1>
+    <form  action="Result.php" method="post" >
+      <div class="txt_field">
+        <input type="text" name="email1" required placeholder=""
+        oninvalid="this.setCustomValidity('Email is empty')"
+        oninput="this.setCustomValidity('')"/>
+        <span></span>
+        <label>Email</label>
+      </div>
+      <div class="txt_field">
+        <input type="password"  name="password1" required placeholder=""
+        oninvalid="this.setCustomValidity('Password is empty')"
+        oninput="this.setCustomValidity('')"/>
+        <span></span>
+        <label>Password</label>
+      </div>
+      <input type="submit" value="Login" >
+      <div class="signup_link">
+        Not a member? <a href="registration.html">Signup</a>
+      </div>
+    </form>
+  </div>
+ 
+
+</body>
